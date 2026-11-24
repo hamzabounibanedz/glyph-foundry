@@ -9,59 +9,59 @@
 */
 @layer base {
   :root {
-    --background: 48 33% 98%; /* warm off-white paper */
-    --foreground: 40 8% 9%; /* warm off-black ink */
+    --background: 195 35% 97%; /* warm off-white paper */
+    --foreground: 222.2 84% 4.9%; /* warm off-black ink */
 
     --card: 0 0% 100%; /* crisp white surfaces (the canvas + input card) */
-    --card-foreground: 40 8% 9%;
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 40 8% 9%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 231 45% 51%; /* the one quiet accent: refined ink-blue */
-    --primary-foreground: 0 0% 100%;
+    --primary: 221.2 83.2% 53.3%; /* the one quiet accent: refined ink-blue */
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 45 22% 95%; /* warm light neutral */
-    --secondary-foreground: 40 8% 12%;
-    --muted: 45 22% 95%;
-    --muted-foreground: 40 4% 42%;
-    --accent: 45 24% 94%;
-    --accent-foreground: 40 8% 12%;
+    --secondary: 210 40% 96.1%; /* warm light neutral */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 8 72% 51%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 44 16% 90%; /* warm hairline */
-    --input: 44 16% 89%;
-    --ring: 231 45% 51%; /* focus = accent */
+    --border: 214.3 31.8% 91.4%; /* warm hairline */
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%; /* focus = accent */
 
     --radius: 0.75rem;
   }
 
   .dark {
-    --background: 40 7% 5%; /* warm off-black */
-    --foreground: 45 22% 95%; /* warm off-white */
+    --background: 222.2 84% 4.9%; /* warm off-black */
+    --foreground: 210 40% 98%; /* warm off-white */
 
-    --card: 40 5% 8%;
-    --card-foreground: 45 22% 95%;
-    --popover: 40 5% 8%;
-    --popover-foreground: 45 22% 95%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 230 66% 67%; /* a touch brighter ink-blue on dark */
-    --primary-foreground: 0 0% 100%;
+    --primary: 217.2 91.2% 59.8%; /* a touch brighter ink-blue on dark */
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 40 4% 13%;
-    --secondary-foreground: 45 22% 95%;
-    --muted: 40 4% 13%;
-    --muted-foreground: 45 6% 60%;
-    --accent: 40 4% 15%;
-    --accent-foreground: 45 22% 95%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 8 64% 52%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 40 5% 15%;
-    --input: 40 5% 16%;
-    --ring: 230 66% 67%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
   }
 }
 

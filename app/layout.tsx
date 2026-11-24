@@ -1,28 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/app/components/ui/toaster";
 import { TooltipProvider } from "@/app/components/ui/tooltip";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
 import AuthProvider from "@/app/components/AuthProvider";
 
-const satoshi = localFont({
-  src: [
-    { path: "./fonts/Satoshi-Regular.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/Satoshi-Medium.woff2", weight: "500", style: "normal" },
-    { path: "./fonts/Satoshi-Bold.woff2", weight: "700", style: "normal" },
-    { path: "./fonts/Satoshi-Black.woff2", weight: "900", style: "normal" },
-  ],
-  variable: "--font-satoshi",
-  display: "swap",
-  fallback: ["ui-sans-serif", "system-ui", "sans-serif"],
-});
+const studioFont = Space_Grotesk({ subsets: ["latin"], variable: "--font-satoshi", display: "swap" });
 
-const title = "LogoCreator: Generate a logo in seconds";
+const title = "Glyph Foundry | Logo design studio";
 const description =
   "Create a clean, professional logo for your brand in seconds. Free and open source.";
-const canonicalUrl = "https://www.logo-creator.io/";
-const sitename = "LogoCreator";
+const canonicalUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000";
+const sitename = "Glyph Foundry";
 
 // Resolve the OG/Twitter card image against the origin actually serving THIS
 // build, not a hardcoded canonical domain. Pointing the card at
@@ -88,7 +78,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${satoshi.variable} h-full`}
+      className={`${studioFont.variable} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-full font-sans">
